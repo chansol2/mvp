@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <%include ../common/head-meta %>
+  </head>
+
+  <body>
+    <!-- Header Area start  -->
+    <%include ../common/header %>
+    <!-- Header Area End  -->
+
+    <!-- OffCanvas Cart Start -->
+    <!-- <%include ../common/offcanvas-cart %> -->
+    <!-- OffCanvas Cart End -->
+
+    <!-- OffCanvas Mobile-Menu Start -->
+    <%include ../common/offcanvas-mobile-menu %>
+    <!-- OffCanvas Menu End -->
+
+    <div class="container-fluid">
+      <div class="container-iframe-modal">
+        <iframe class="responsive-iframe" src="<%= o_url %>"></iframe>
+      </div>
+    </div>
+
+    <!-- Footer Area Start -->
+    <!-- <%include ./footer-fixed %> -->
+    <!-- Footer Area End -->
+
+    <!-- Modal -->
+    <%include ../common/modal %>
+    <!-- Modal end -->
+    <%include ../common/foot-meta %>
+  </body>
+</html>

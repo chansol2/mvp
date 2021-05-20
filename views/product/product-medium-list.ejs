@@ -1,0 +1,23 @@
+
+  <% for(var i = 0; i < spl.length ; i++){ %>
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 pr-1 pl-2" data-aos="fade-up" data-aos-delay="200">
+    <!-- Single Prodect -->
+    <div class="product">
+      <div class="thumb">
+        <a href="/product/<%= spl[i].cate_id %>/detail?pid=<%= spl[i].id %>&o_url=<%= spl[i].org_url%>" class="image">
+          <img src="<%= spl[i].img_url %>" alt="Product" />
+        </a>
+        <div class="actions">
+          <a href="/" class="action wishlist" title="Wishlist"><i class="icon-heart"></i></a>
+        </div>
+      </div>
+      <div class="content">
+        <h5 class="title"><%= spl[i].seller_nm %></h5>
+        <h5 class="name"><%= spl[i].prd_nm %></h5>
+        <span class="price">
+          <span class="new"><%= spl[i].sales_price %>원</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <% } %>

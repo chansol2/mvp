@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <%include ./common/head-meta %>
+  </head>
+
+  <body>
+    <!-- Header Area start  -->
+    <%include ./common/header %>
+    <!-- Header Area End  -->
+
+    <!-- OffCanvas Cart Start -->
+    <!-- <%include ./common/offcanvas-cart %> -->
+    <!-- OffCanvas Cart End -->
+
+    <!-- OffCanvas Mobile-Menu Start -->
+    <%include ./common/offcanvas-mobile-menu %>
+    <!-- OffCanvas Menu End -->
+
+    <!-- <div class="offcanvas-overlay"></div> -->
+
+    <!-- Hero/Intro Slider Start -->
+    <div class="section">
+      <div class ="container">
+        <div class="main-banner">
+
+        </div>
+      </div>
+      <!-- <div
+        class="
+        hero-slider
+          swiper-container
+          slider-nav-style-1
+        "
+      > -->
+        <!-- Hero slider Active -->
+        <!-- <div class="swiper-wrapper"> -->
+          <!-- Single slider item -->
+          <!-- <%include ./section-banner %> -->
+          <!-- Single slider item -->
+          <!-- <%include ./section-banner %> -->
+          <!-- Single slider item -->
+          <!-- <%include ./section-banner %>
+        </div> -->
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-buttons">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+     </div> -->
+    </div>
+
+    <!-- Hero/Intro Slider End -->
+    <!-- Product tab Area Start -->
+    <div class="section product-tab-area mt-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" data-aos="fade-up">
+            <div class="section-title">
+              <h2 class="title">"자취하는 당신만을 위한 상품 추천"</h2>
+              <p class="sub-title mb-6">"내가 꿈꾸는 자취방에 꼭 맞는 상품만 추천받으세요"</p>
+            </div>
+          </div>
+
+          <!-- Tab Start mb-8 -->
+          <div
+            class="col-md-12 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <ul class="product-tab-nav nav justify-content-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  href="#tab-product-new-arrivals"
+                  >홈카페</a
+                >
+              </li>
+              <li class="nav-item custom-ml">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  href="#tab-product-best-sellers"
+                  >집순이/집돌이</a
+                >
+              </li>
+              <li class="nav-item custom-ml">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  href="#tab-product-sale-item"
+                  >홈파티</a
+                >
+              </li>
+              <li class="nav-item custom-ml">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  href="#tab-product-pc"
+                  >겜돌이/겜순이</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab End -->
+        </div>
+        <br />
+        <div class="row">
+          <div class="col">
+            <div class="tab-content">
+              <!-- 1st tab start -->
+              <div class="tab-pane fade show active" id="tab-product-new-arrivals">
+                <%include ./product-list-cafe %>
+              </div>
+              <!-- 1st tab end -->
+              <!-- 2nd tab start -->
+              <div class="tab-pane fade" id="tab-product-best-sellers">
+                <%include ./product-list-home %>
+              </div>
+              <!-- 2nd tab end -->
+              <!-- 3rd tab start -->
+              <div class="tab-pane fade" id="tab-product-sale-item">
+                <%include ./product-list-party %>
+              </div>
+              <!-- 3rd tab end -->
+              <!-- 4th tab start -->
+              <div class="tab-pane fade" id="tab-product-pc">
+                <%include ./product-list-pc %>
+              </div>
+              <!-- 4th tab end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Product tab Area End -->
+
+    <!-- Footer Area Start -->
+    <%include ./common/footer %>
+    <!-- Footer Area End -->
+
+    <!-- Modal -->
+    <%include ./common/modal %>
+    <!-- Modal end -->
+  <%include ./common/foot-meta %>
+  </body>
+</html>
