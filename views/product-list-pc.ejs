@@ -4,41 +4,17 @@
       <div class="sidebar-widget mt-40px">
         <div class="sidebar-widget-tag d-inline-block">
           <ul>
-            <li><a class="categoryClicked" name="101">게이밍 가구</a></li>
-            <li><a class="categoryClicked" name="101">게이밍 용품</a></li>
+            <li class="medium-cate-tab"><a class="active" name="#pc-furniture">게이밍 가구</a></li>
+            <li class="medium-cate-tab"><a name="#pc-goods">게이밍 용품</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-md-12 text-right mb-4">
-    <a href="/product/301" class="text-bold">겜돌이/겜순이 더보기 →</a>
-  </div>
-
-  <!-- initial bed rcmd -->
-
-  <% for(var i = 0; i < 8; i++){ %>
-  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 pr-1 pl-2" data-aos="fade-up" data-aos-delay="200">
-    <!-- Single Prodect -->
-    <div class="product">
-      <div class="thumb">
-        <a href="/product/<%= spl_3[i].cate_id %>/detail?pid=<%= spl_3[i].id %>&o_url=<%= spl_3[i].org_url%>" class="image">
-          <img src="<%= spl_3[i].img_url %>" alt="Product" />
-        </a>
-        <div class="actions">
-          <a href="/product/101" class="action wishlist" title="Wishlist"><i class="icon-heart"></i></a>
-        </div>
-      </div>
-      <div class="content">
-        <h5 class="title"><%= spl_3[i].seller_nm %></h5>
-        <!-- <a href="#"></a> -->
-        <h5 class="name"><%= spl_3[i].prd_nm %></h5>
-        <span class="price">
-          <span class="new"><%= spl_3[i].sales_price %>원</span>
-        </span>
-      </div>
-    </div>
-  </div>
-  <% } %>
-
+</div>
+<div class="row show" id="pc-furniture">
+  <%include ./product-list-pc-rcmd/product-list-pc-furniture %>
+</div>
+<div class="row d-none" id="pc-goods">
+  <%include ./product-list-pc-rcmd/product-list-pc-goods %>
 </div>
