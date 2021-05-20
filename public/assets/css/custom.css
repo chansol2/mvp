@@ -399,3 +399,8 @@
   border-radius: 10px;
   border: solid 2px #03c04a;
 }
+
+.shop-sidebar-wrap .sidebar-widget-tag li a.active {
+  background-color: #03c04a;
+  color: white;
+}
