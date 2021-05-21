@@ -1,5 +1,6 @@
 const request = require('request');
 const req_modules = require('./req_modules');
+const priceFormat = require("../modules/price-format.js")
 
 var res_data_1, res_data_2, res_data_3;
 
@@ -85,16 +86,3 @@ exports.prds_10101 = function() {
       });
   });
 }
-
-
-// price formatting
-Number.prototype.format = function() {
-  if (this == 0) return 0;
-
-  var reg = /(^[+-]?\d+)(\d{3})/;
-  var n = (this + '');
-
-  while (reg.test(n)) n = n.replace(reg, '$1' + ',' + '$2');
-
-  return n;
-};
